@@ -1,0 +1,36 @@
+{
+  "name": "mist-connector-webrtc-browser",
+  "version": "1.0.0",
+  "description": "A Crewdle Mist connector to use WebRTC for peer connections in the browser",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack build --mode=production && mv src/index.d.ts dist/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crewdle/mist-connector-webrtc-browser.git"
+  },
+  "author": "Crewdle Technologies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crewdle/mist-connector-webrtc-browser/issues"
+  },
+  "homepage": "https://github.com/Crewdle/mist-connector-webrtc-browser#readme",
+  "dependencies": {
+    "webrtc-adapter": "^8.2.3"
+  },
+  "peerDependencies": {
+    "@crewdle/web-sdk": ">=0.1.2-beta.1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
