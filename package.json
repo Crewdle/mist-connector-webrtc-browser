@@ -1,6 +1,6 @@
 {
   "name": "@crewdle/mist-connector-webrtc-browser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Crewdle Mist connector to use WebRTC for peer connections in the browser",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

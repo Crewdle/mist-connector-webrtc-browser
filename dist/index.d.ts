@@ -1,4 +1,4 @@
-import { MediaStreamPriority, IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk';
+import type { IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk';
 /**
  * WebRTC connector for the browser environment for peer connections.
  * @category Connector
@@ -150,3 +150,13 @@ export declare class WebRTCBrowserPeerConnectionConnector implements IPeerConnec
      */
     setEncodingParameters(sender: IPeerConnectionSender, scaleResolutionDownBy: number, maxFramerate: number, maxBitrate: number, priority: MediaStreamPriority): void;
 }
+/**
+ * The priority of a media stream.
+ * @ignore
+ */
+declare enum MediaStreamPriority {
+    High = 1,
+    Default = 2,
+    Low = 3
+}
+export {};
