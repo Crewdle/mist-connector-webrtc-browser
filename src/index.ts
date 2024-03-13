@@ -1,6 +1,6 @@
 import adapter from 'webrtc-adapter';
 
-import { MediaStreamPriority, IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk';
+import type { IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk';
 
 /**
  * WebRTC connector for the browser environment for peer connections.
@@ -374,4 +374,14 @@ function convertPriority(priority: MediaStreamPriority): RTCPriorityType {
     default:
       return 'medium';
   }
+}
+
+/**
+ * The priority of a media stream.
+ * @ignore
+ */
+enum MediaStreamPriority {
+  High = 1,
+  Default = 2,
+  Low = 3
 }
