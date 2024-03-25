@@ -1,4 +1,4 @@
-import type { IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk';
+import type { IPeerConnectionDataChannelConnector, IPeerConnectionOfferOptions, IPeerConnectionSenderMap, IPeerConnectionSender, IPeerConnectionTrackEvent, IPeerConnectionDataChannelEvent, IPeerConnectionSessionDescription, IPeerConnectionHandshakeCandidate, IPeerConnectionHandshakeCandidateEvent, IPeerConnectionConnector, IPeerConnectionConfiguration, PeerConnectionStatsReport } from '@crewdle/web-sdk-types';
 /**
  * WebRTC connector for the browser environment for peer connections.
  * @category Connector
